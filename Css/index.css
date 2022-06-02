@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 0 4.0rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    width: 15%;
+    height: 7%;
+}
+
+.navbar {
+    width: 85%;
+    font-weight: bolder;
+    display: block;
+}
+
+.navbar-list-left {
+    display: flex;
+    gap: 3.0rem;
+    font-size: 15px;
+    float: left;
+    list-style: none;
+}
+
+
+.navbar-list-right {
+    float: right;
+    width: 15%;
+    display: flex;
+    list-style: none;
+    gap: 3.5rem;
+    font-size: 15px;
+}
+
+
+.navbar-list-left :hover {
+    color: black;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.navbar-list-left img:hover {
+    transform: rotate(-180deg);
+}
+.nav-Link:hover .dropdown-content {display: block;}
+.nav-Link2:hover .dropdown-content {display: block;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.Content {
+
+    width: 50%;
+    height: 580px;
+    font-weight: 700;
+    float: left;
+
+
+}
+
+.content-text {
+    padding-top: 100px;
+    padding-left: 100px;
+    height: 500px;
+}
+
+.content-footer {
+    float: left;
+    padding-left: 100px;
+
+}
+
+.Punch-line {
+    text-align: justify;
+    font-size: 40px;
+    font-weight: bolder !important;
+    line-height: 1.2;
+}
+
+.Text {
+    padding-top: 50px;
+}
+
+.Image-Content {
+    width: 50%;
+    height: 580px;
+    float: right;
+
+}
+
+.Image-Content img {
+    width: 80%;
+    height: 90%;
+}
+
+.button {
+    padding-top: 50px;
+}
+
+button {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 130px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 35px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+
+}
+
+.toggle {
+    width: 20%;
+}
+
+.toggle .open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+/* Moile Responsive */
+
+@media only screen and (max-width: 920px) {
+    .Image-Content {
+        background-color: lightblue;
+        width: 100%;
+    }
+
+    .Image-Content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Content {
+        background-color: lightblue;
+        width: 100%;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .Logo {
+        width: 80%;
+        height: 7%;
+    }
+
+    .toggle {
+        width: 20%;
+        float: right;
+        display: block;
+    }
+
+    .toggle .open {
+        display: block;
+        width: 10%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .close {
+        display: block;
+        width: 10%;
+        float: right;
+        cursor: pointer;
+        z-index: 999;
+        padding-top: 10px;
+
+    }
+
+    /* .navbar {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        right: 0;
+
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    } */
+
+    .navbar-list-left {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        padding-left: 5px;
+    }
+
+    .navbar-list-right {
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        float: left;
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    .CloseNav {
+        display: none;
+    }
+
+    .OpenNav {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        right: 0;
+        opacity: 10px;
+    }
+
+    .OpenNav ul {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+}

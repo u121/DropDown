@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" href="./Css/index.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="Logo">
+            <img src="./images/logo.svg" alt="Logo" />
+        </div>
+        <nav class="navbar CloseNav OpenNav" id="NavBar">
+            <div class="close"> <img src="./images/icon-close-menu.svg" onclick="Close()" /></div>
+            <ul class="navbar-list-left active">
+                <li class="nav-Link"> Feature <img src="./images/icon-arrow-up.svg" alt="Uparrow" class="Uparrow" />
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-Link2"> Company <img src="./images/icon-arrow-up.svg" alt="Uparrow" />
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li> Carrers</li>
+                <li> About</li>
+            </ul>
+            <ul class="navbar-list-right active">
+                <li> Login</li>
+                <li> Register</li>
+            </ul>
+        </nav>
+        <nav class="toggle">
+            <div class="open"> <img src="./images/icon-menu.svg" onclick="Open()" /></div>
+
+        </nav>
+
+    </header>
+    <div class="main-content">
+        <div class="Image-Content">
+            <img src="./images/image-hero-desktop.png" alt="Hero" />
+        </div>
+        <div class="Content">
+            <div class="content-text">
+                <p class="Punch-line"> Make <br />
+                    remote Work</p>
+                <p class="Text">
+                    Get your team in sync, no matter your location. <br />Streamline processes, create team rituals,
+                    and<br /> watch productivity soar.
+                </p>
+                <div class="button">
+                    <button type="submit">Learn more</button>
+                </div>
+            </div>
+
+            <div class="content-footer">
+                <img src="images/client-databiz.svg" alt="databiz" />
+                <img src="/images/client-audiophile.svg" alt="audio" />
+                <img src="./images/client-meet.svg" alt="meet" />
+                <img src="./images/client-maker.svg" alt="maker" />
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function Close() {
+            var navID = document.getElementById("NavBar");
+            if (navID.className === "navbar") {
+                navID.className += "CloseNav";
+                console.log("Close");
+            } else {
+                navID.className = "CloseNav";
+            }
+        }
+        function Open() {
+            var navID = document.getElementById("NavBar");
+            if (navID.className === "navbar") {
+                navID.className += "OpenNav";
+                console.log("Open");
+            } else {
+                navID.className = "OpenNav";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
